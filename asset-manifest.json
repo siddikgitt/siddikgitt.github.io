@@ -1,21 +1,22 @@
 {
   "files": {
     "main.css": "/static/css/main.073c9b0a.css",
-    "main.js": "/static/js/main.d1904a07.js",
+    "main.js": "/static/js/main.2db8769f.js",
     "static/js/787.1ed0c42c.chunk.js": "/static/js/787.1ed0c42c.chunk.js",
     "static/media/miniYT.jpg": "/static/media/miniYT.f6bf15091d6561512ca4.jpg",
     "static/media/dotandkey.jpg": "/static/media/dotandkey.167efb1859a4625d5a69.jpg",
     "static/media/modesens.jpg": "/static/media/modesens.8ed7b1cb6290414704f8.jpg",
     "static/media/toggl.jpg": "/static/media/toggl.4e07da765548e8d89cf1.jpg",
     "static/media/homeIcon.png": "/static/media/homeIcon.115c5ff19f75ce39ef50.png",
+    "static/media/Siddikkhan-Pathan-Resume.pdf": "/static/media/Siddikkhan-Pathan-Resume.3f85ae0d14a4dfa71499.pdf",
     "static/media/logo.jpg": "/static/media/logo.2e8a24a949d7c76a3d7b.jpg",
     "index.html": "/index.html",
     "main.073c9b0a.css.map": "/static/css/main.073c9b0a.css.map",
-    "main.d1904a07.js.map": "/static/js/main.d1904a07.js.map",
+    "main.2db8769f.js.map": "/static/js/main.2db8769f.js.map",
     "787.1ed0c42c.chunk.js.map": "/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.073c9b0a.css",
-    "static/js/main.d1904a07.js"
+    "static/js/main.2db8769f.js"
   ]
 }
