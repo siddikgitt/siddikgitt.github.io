@@ -8,7 +8,7 @@ import {
   Link,
 } from "@chakra-ui/react";
 import React from "react";
-import GitHubCalendar from "react-github-calendar";
+import GitHubCalendar from "react-github-calendar"; 
 
 const Github = () => {
   return (
@@ -21,6 +21,7 @@ const Github = () => {
         </Center>
         <Center>
           <Box marginTop={10} w={["90%", "90%"]}>
+            <Center>
             <GitHubCalendar
               username="siddikgitt"
               blockSize={15}
@@ -28,12 +29,15 @@ const Github = () => {
               color="crimson"
               fontSize={16}
             />
+            </Center>
           </Box>
         </Center>
         
           <Center>
         <Flex marginTop={[7,7,10,10]} gap={[5,0,10,10]} w={"80%"} flexWrap={["wrap", "wrap", "nowrap", "nowrap"]}>
-            <Box>
+           
+              <Box>
+                
             <Image
               width={["100%", "100%", "100%", "100%"]}
               src="https://github-readme-streak-stats.herokuapp.com/?user=siddikgitt"

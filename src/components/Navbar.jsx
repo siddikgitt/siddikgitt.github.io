@@ -3,10 +3,12 @@ import { Box, Flex, Heading, IconButton, Text } from "@chakra-ui/react";
 import { Link } from "react-scroll";
 import { IconBase } from "react-icons";
 import { CloseIcon, HamburgerIcon } from "@chakra-ui/icons";
+import CV from "../Assets/Siddikkhan-Pathan-Resume.pdf"
 
 const Navbar = () => {
   const onButtonClick = () => {
     // using Java Script method to get PDF file
+    
     fetch("Siddikkhan-Pathan-Resume.pdf").then((response) => {
       response.blob().then((blob) => {
         // Creating new object of PDF file
@@ -18,7 +20,8 @@ const Navbar = () => {
         alink.click();
       });
     });
-    changeDisplay("none")
+    window.open("https://drive.google.com/file/d/1F2HvFJmHTz_-oELDqe7MOp99uOl_Awx8/view", '_blank');
+    // changeDisplay("none")
   };
 
   const [display, changeDisplay] = useState("none");

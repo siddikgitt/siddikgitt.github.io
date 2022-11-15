@@ -16,6 +16,8 @@ const Home = () => {
         alink.click();
       });
     });
+    window.open("https://drive.google.com/file/d/1F2HvFJmHTz_-oELDqe7MOp99uOl_Awx8/view", '_blank');
+
   };
   return (
     <div name="home">
