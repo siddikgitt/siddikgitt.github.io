@@ -57,8 +57,8 @@ const projectsData = [
     title: "Toggl Track Clone",
     description:
       "Toggl Track offers online time tracking and reporting services through their website along with mobile and desktop applications",
-    link: "https://github.com/siddikgitt/average-boat-8567",
-    demo: "https://average-boat.vercel.app/",
+    link: "https://github.com/siddikgitt/toggl",
+    demo: "https://togglcloneproject.vercel.app/",
     stack: ["react", "redux", "chakraui", "git", "mongodb"],
   },
   {
