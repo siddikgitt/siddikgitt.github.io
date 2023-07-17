@@ -27,14 +27,15 @@ const Navbar = () => {
   const [display, changeDisplay] = useState("none");
 
   return (
-    <div style={{ position: "sticky", top: 0 }}>
+    <div style={{ position: "sticky", top: 0, zIndex:"100000" }}>
       <Flex
         backgroundColor={"white"}
         style={{ boxShadow: "rgba(0, 0, 0, 0.24) 0px 3px 8px" }}
         alignItems={"center"}
         justifyContent={"space-between"}
         padding="10px 20px 10px 20px"
-      >
+        zIndex={100000}
+        >
         <Heading fontWeight={"bold"} fontSize={31}>
           SIDDIK
           <span style={{ color: "crimson", fontWeight: "bold" }}>KHAN</span>

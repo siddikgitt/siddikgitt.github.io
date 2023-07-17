@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import {
   Box,
   Button,
@@ -11,6 +11,9 @@ import {
   SimpleGrid,
   Text,
 } from "@chakra-ui/react";
+
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 import {
   DiJavascript1,
@@ -75,8 +78,8 @@ const projectsData = [
     title: "Youtube Mini",
     description:
       "YouTube Mini App is small application which work similarly as YouTube. You can play any video in this app.",
-    link: "https://github.com/siddikgitt/Mini-Movie-App",
-    demo: "https://superb-panda-f470b5.netlify.app/",
+    link: "https://github.com/siddikgitt/miniYT",
+    demo: "https://iridescent-faun-10897c.netlify.app/",
     stack: ["html", "css", "javascript"],
   },
 ];
@@ -103,6 +106,11 @@ const techStack = {
 };
 
 const Project = () => {
+  useEffect(() => {
+
+    AOS.init({ duration: 1000 });
+  }, [])
+
   return (
     <div style={{ marginBottom: "25px" }} name="projects">
       <Center>
@@ -116,6 +124,8 @@ const Project = () => {
         {projectsData.map((el) => (
           <Center>
             <Box
+              data-aos="flip-right"
+              data-aos-duration="1000"
               boxShadow="rgba(0, 0, 0, 0.35) 0px 5px 15px;"
               border={"1.5px solid crimson"}
               borderRadius="15px"
@@ -148,7 +158,7 @@ const Project = () => {
                 justifyContent={"space-around"}
                 alignItems="center"
               >
-                <Link isExternal href={el.demo}>
+                {/* <Link isExternal href={el.demo}>
                   <Box
                     as="button"
                     marginTop={"25px"}
@@ -177,7 +187,7 @@ const Project = () => {
                   >
                     Live
                   </Box>
-                </Link>
+                </Link> */}
                 <Link isExternal href={el.link}>
                   <Box
                     as="button"

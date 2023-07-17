@@ -1,8 +1,16 @@
 import { Box, Button, Center, Flex, Image, SimpleGrid, Text } from "@chakra-ui/react";
-import React from "react";
+import React, { useEffect } from "react";
 import Typewriter from "typewriter-effect";
 
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
 const Home = () => {
+
+  useEffect(() => {
+    AOS.init({ duration: 1000 });
+  }, [])
+
   const onButtonClick = () => {
     // using Java Script method to get PDF file
     fetch("Siddikkhan-Pathan-Resume.pdf").then((response) => {
@@ -94,7 +102,6 @@ const Home = () => {
         <Box>
           <Center>
           <Image
-
             boxShadow={"rgba(0, 0, 0, 0.35) 0px 5px 15px;"}
             borderRadius={"50%"}
             h={["300px", "300px", "250px", "350px"]}

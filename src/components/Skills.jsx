@@ -6,7 +6,7 @@ import {
   SimpleGrid,
   Text,
 } from "@chakra-ui/react";
-import React from "react";
+import React, { useEffect } from "react";
 import { AiFillHtml5 } from "react-icons/ai";
 import { FaBootstrap, FaCss3Alt, FaGitAlt, FaReact } from "react-icons/fa";
 import {
@@ -24,6 +24,9 @@ import {
   SiSwiper,
   SiVercel,
 } from "react-icons/si";
+
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 let skillsData = [
   {
@@ -102,6 +105,11 @@ let skillsData = [
 ];
 
 const Skills = () => {
+  useEffect(() => {
+
+    AOS.init({ duration: 1000 });
+  }, [])
+  
   return (
     <div name="skills">
       <Box marginBottom={"65px"}>
@@ -115,6 +123,7 @@ const Skills = () => {
             <SimpleGrid marginTop={10} columns={[2,2,4,6]} spacing={10}>
               {skillsData.map((el) => (
                 <Container
+                data-aos="zoom-in"
                 boxShadow="rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;"
                 centerContent
                   border={"1.5px solid crimson"}
